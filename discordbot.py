@@ -6,14 +6,6 @@ import random
 bot = commands.Bot(command_prefix='!')
 token = os.environ['DISCORD_BOT_TOKEN']
 
-
-@bot.event
-async def on_command_error(ctx, error):
-    orig_error = getattr(error, "original", error)
-    error_msg = ''.join(traceback.TracebackException.from_exception(orig_error).format())
-    await ctx.send(error_msg)
-
-
 @bot.command()
 async def vc(ctx):
      userID = []
@@ -43,6 +35,7 @@ async def vc(ctx):
         await ctx.send("**" + str(userNAME[i]) + "**さんは**__" + str(Buki_all[int(r)]) + "__**でし！")
         i += 1
         
+@bot.command()    
 async def buki(ctx):
     await ctx.send('でしでし！')
 
