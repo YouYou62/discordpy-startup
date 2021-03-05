@@ -185,12 +185,7 @@ async def on_message(message):
     if message.content.startswith("!buki"):
 
         if message.content.endswith("1"):
-            await message.channel.send()
-        
+            await message.channel.send("でしでし！")
 
-    elif message.content == "end":
-        print("コマンド名[end]")
-        await message.channel.send("プログラムを終了したでし！")
-        exit()
 
 client.run(TOKEN)
