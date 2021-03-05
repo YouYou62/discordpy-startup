@@ -1,7 +1,7 @@
 import discord
 import random
 
-TOKEN = "ODAwMDI1OTAyNjM2NDY2MTg3.YAMILg.V1EVO3ch3ibvXNKcEpk4vX3hu-8"
+TOKEN = os.environ['DISCORD_BOT_TOKEN']
 client = discord.Client()
 
 Buki_all = [
