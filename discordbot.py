@@ -1,4 +1,6 @@
-import discord
+from discord.ext import commands
+import os
+import traceback
 import random
 
 TOKEN = os.environ['DISCORD_BOT_TOKEN']
